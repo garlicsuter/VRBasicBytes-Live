@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public int orangeTotalScoreValue = 0;
     public int blueTotalScoreValue = 0;
 
+
     public void CalcRoundScore()
     {
         //if orange round score > blue round score, total score += orange-blue
@@ -35,5 +36,5 @@ public class GameManager : MonoBehaviour
 
         orangeRoundScoreText.text = orangeRoundScoreValue.ToString();
         blueRoundScoreText.text = blueRoundScoreValue.ToString();
-    }
+
 }
