@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
     public void CalcRoundScore()
     {
         //if orange round score > blue round score, total score += orange-blue
-        if(orangeRoundScoreValue > blueRoundScoreValue)
+        if (orangeRoundScoreValue > blueRoundScoreValue)
         {
             orangeTotalScoreValue += orangeRoundScoreValue - blueRoundScoreValue;
         }
 
-        else if(blueRoundScoreValue > orangeRoundScoreValue)
+        else if (blueRoundScoreValue > orangeRoundScoreValue)
         {
             blueTotalScoreValue += blueRoundScoreValue - orangeRoundScoreValue;
         }
@@ -36,5 +36,5 @@ public class GameManager : MonoBehaviour
 
         orangeRoundScoreText.text = orangeRoundScoreValue.ToString();
         blueRoundScoreText.text = blueRoundScoreValue.ToString();
-
+    }
 }
